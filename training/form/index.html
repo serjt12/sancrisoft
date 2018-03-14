@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Training Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+    
+</head>
+<body>
+<span class="dragon">
+    <img src="drag.png"></img>
+    
+</span>
+<span class="tail">
+    <img src="drag2.png"></img>
+</span>
+<div class="form1">
+    <h1>Sign Up Now For Meh.
+        <span>Everything you need to build a pretty online portafolio</span>
+    </h1>
+<form id="portafolioform" name="portafolioform" >
+        <div class="section">
+            <span>1</span>First, name your portafolio</div>
+        <div class="inner-wrap">
+            <label>Portafolio Title
+<input  type="text" class="portafolioName" name="portafolio1" />
+<span id="error" class="error">Let's name that awesome portafolio</span>
+<span id="short" class="error">Your portafolio's name should be longer than that...</span>
+            </label>
+            <label>Portafolio Address
+<input type="text" name="portafolio2" class="portafolioAddress"></input>
+<span id="errorad" class="error">This space is required!</span>
+<span id="shortad" class="error">Your address should be longer.</span>
+            </label>
+        </div>
+
+        <div class="section">
+            <span>2</span>Now, enter your account details</div>
+        <div class="inner-wrap">
+            <label>Name
+                <input type="text" class="username" name="username" />
+<span id="erroruser" class="error">If we don't know your name we don't know how to call you</span>
+<span id="shortuser" class="error">Your name must be longer...</span>
+            </label>
+            <label>Email
+                <input type="email" class="email"name="email" />
+<span id="errormail" class="error">This space is required!</span>
+<span id="shortmail" class="error">Your email should be longer.</span>
+<span id="wrongmail" class="error">This is not a valid email.</span>
+            </label>
+<label>Password
+    <input type="password" name="password" class="password" id="password"/>
+<span id="errorpass" class="error">This space is required!</span>
+<span id="shortpass" class="error">Your password should be longer.</span>
+<span class="show-pass">
+<input type="checkbox" name="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'">Show Password.
+</span>
+</label>
+        </div>
+<span class="privacy-policy">
+<input id="terms" type="checkbox" name="terms">
+<span>I agree to the
+    <a href="#">Terms of Use</a>,
+    <a href="#">Privacy Policy</a> and
+    <a href="#">Refound Policy</a>
+</span>
+            </span>
+        
+        <div class="button-section">
+            <button type="submit" name="Sign Up" class="btn" >Create your portafolio</button>
+
+            
+        </div>
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
